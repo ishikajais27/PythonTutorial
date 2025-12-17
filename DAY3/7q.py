@@ -1,5 +1,5 @@
-list1 = [1, 2, 3, 4]
-list2 = [3, 4, 5, 6]
+list1 = list(map(int, input("Enter first list elements: ").split()))
+list2 = list(map(int, input("Enter second list elements: ").split()))
 common = []
 for i in list1:
     if i in list2 and i not in common:

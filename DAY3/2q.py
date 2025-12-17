@@ -1,8 +1,3 @@
-lst = [1, 2, 3, 2, 4, 2, 5]
-element = 2
-count = 0
-for i in lst:
-    if i == element:
-        count += 1
-print("List:", lst)
-print("Occurrences of", element, ":", count)
+lst = list(map(int, input("Enter list elements: ").split()))
+element = int(input("Enter element to count: "))
+print("Occurrences:", lst.count(element))

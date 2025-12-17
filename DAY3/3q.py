@@ -1,3 +1,3 @@
-lst = [10, 20, 30, 40]
-print("Original list:", lst)
-print("Reversed list:", lst[::-1])
+lst = list(map(int, input("Enter list elements: ").split()))
+reversed_list = lst[::-1]
+print("Reversed list:", reversed_list)

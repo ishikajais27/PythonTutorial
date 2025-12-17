@@ -1,4 +1,3 @@
-lst = [4, 7, 1, 9, 2]
-print("List:", lst)
-print("Maximum:", max(lst))
-print("Minimum:", min(lst))
+lst = list(map(int, input("Enter list elements: ").split()))
+print("Maximum element:", max(lst))
+print("Minimum element:", min(lst))

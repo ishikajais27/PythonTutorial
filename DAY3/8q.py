@@ -1,5 +1,6 @@
-lst = [1, 2, 3, 4, 5]
-k = 2
-print("Original list:", lst)
-print("Left rotation:", lst[k:] + lst[:k])
-print("Right rotation:", lst[-k:] + lst[:-k])
+lst = list(map(int, input("Enter list elements: ").split()))
+n = int(input("Enter rotation value: "))
+left_rotate = lst[n:] + lst[:n]
+right_rotate = lst[-n:] + lst[:-n]
+print("Left rotated list:", left_rotate)
+print("Right rotated list:", right_rotate)

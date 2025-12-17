@@ -1,13 +1,19 @@
-matrix1 = [[1, 2], [3, 4]]
-matrix2 = [[5, 6], [7, 8]]
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
 
-add = [[0, 0], [0, 0]]
-sub = [[0, 0], [0, 0]]
+print("Enter first matrix:")
+m1 = [[int(input()) for j in range(c)] for i in range(r)]
 
-for i in range(2):
-    for j in range(2):
-        add[i][j] = matrix1[i][j] + matrix2[i][j]
-        sub[i][j] = matrix1[i][j] - matrix2[i][j]
+print("Enter second matrix:")
+m2 = [[int(input()) for j in range(c)] for i in range(r)]
 
-print("Matrix Addition:", add)
-print("Matrix Subtraction:", sub)
+add = [[m1[i][j] + m2[i][j] for j in range(c)] for i in range(r)]
+sub = [[m1[i][j] - m2[i][j] for j in range(c)] for i in range(r)]
+
+print("Matrix Addition:")
+for row in add:
+    print(row)
+
+print("Matrix Subtraction:")
+for row in sub:
+    print(row)

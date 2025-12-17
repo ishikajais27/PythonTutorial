@@ -1,8 +1,8 @@
-list1 = [1, 2, 3]
-list2 = [4, 5, 6]
-merged = []
+list1 = list(map(int, input("Enter first list elements: ").split()))
+list2 = list(map(int, input("Enter second list elements: ").split()))
+merged_list = []
 for i in list1:
-    merged.append(i)
-for i in list2:
-    merged.append(i)
-print("Merged list:", merged)
+    merged_list.append(i)
+for j in list2:
+    merged_list.append(j)
+print("Merged list:", merged_list)
