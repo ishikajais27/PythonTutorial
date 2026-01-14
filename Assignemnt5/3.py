@@ -1,0 +1,5 @@
+f1 = open(input(), "r")
+f2 = open(input(), "w")
+f2.write(f1.read())
+f1.close()
+f2.close()

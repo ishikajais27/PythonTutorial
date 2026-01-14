@@ -1,0 +1,6 @@
+f = open(input(), "r")
+data = f.read()
+f.close()
+lines = data.splitlines()
+words = data.split()
+print(len(lines), len(words), len(data))

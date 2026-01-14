@@ -1,5 +1,4 @@
 s = input("Enter a string: ")
-
 v = c = d = sp = 0
 for ch in s:
     if ch.isdigit():
@@ -11,7 +10,6 @@ for ch in s:
             c += 1
     else:
         sp += 1
-
 print("Vowels:", v)
 print("Consonants:", c)
 print("Digits:", d)
